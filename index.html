@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Train Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 32px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .search {
+            flex-basis: 70%;
+            padding-right: 20px;
+        }
+
+        .search input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .search button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search button:hover {
+            background-color: #45a049;
+        }
+
+        .results {
+            flex-basis: 30%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .results h2 {
+            margin-top: 0;
+        }
+
+        .results ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .results li {
+            margin-bottom: 10px;
+        }
+
+        .results li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Paytm Train Booking</h1>
+        </header>
+        <main>
+            <section class="search">
+                <h2>Search Trains</h2>
+                <input type="text" placeholder="Enter source station">
+                <input type="text" placeholder="Enter destination station">
+                <button>Search</button>
+            </section>
+            <section class="results">
+                <h2>Search Results</h2>
+                <ul>
+                    <li><a href="#">Train 1</a></li>
+                    <li><a href="#">Train 2</a></li>
+                    <li><a href="#">Train 3</a></li>
+                    <!-- Add more train links as needed -->
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Paytm. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
